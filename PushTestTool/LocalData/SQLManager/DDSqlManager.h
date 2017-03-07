@@ -2,8 +2,8 @@
 #import <Foundation/Foundation.h>
 
 typedef void(^InsertCallBack)(NSInteger lastInsertId);
-@interface IVESqlManager : NSObject
-+ (IVESqlManager *)shareManager;
+@interface DDSqlManager : NSObject
++ (DDSqlManager *)shareManager;
 
 //创建表
 - (BOOL)creatTableWithName:(NSString *)tableName KeyAttributes:(NSDictionary *)KeyAttributes primaryKey:(NSString *)primaryKey;

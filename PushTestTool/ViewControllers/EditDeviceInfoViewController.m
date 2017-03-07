@@ -1,16 +1,9 @@
-//
-//  EditDeviceInfoViewController.m
-//  PushTestTool
-//
-//  Created by 张桂杨 on 2017/2/3.
-//  Copyright © 2017年 Ive. All rights reserved.
-//
 
 #import "EditDeviceInfoViewController.h"
 #import "ChooseEnvironmentViewController.h"
 
 #import "DeviceTokenAPI.h"
-#import "IVEHUDManager.h"
+#import "DDHUDManager.h"
 
 @interface EditDeviceInfoViewController () {
 	DeviceTokenAPI *_deviceTokenAPI;

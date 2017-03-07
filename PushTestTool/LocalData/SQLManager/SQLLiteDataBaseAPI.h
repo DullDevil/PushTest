@@ -1,7 +1,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "IVESQLliteConfig.h"
+#import "DDSQLliteConfig.h"
 
 
 typedef void(^SQLLiteSuccessCallBack)(NSDictionary *dict);

@@ -1,7 +1,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface IVESQLGenerater : NSObject
+@interface DDSQLGenerater : NSObject
 
 #pragma mark - -创建表
 + (NSString *)creatTableWithName:(NSString *)tableName KeyAttributes:(NSDictionary *)KeyAttributes primaryKey:(NSString *)primaryKey ;

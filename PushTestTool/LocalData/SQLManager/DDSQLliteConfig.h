@@ -1,13 +1,6 @@
-//
-//  IVESQLliteConfig.h
-//  PushTestTool
-//
-//  Created by 张桂杨 on 2017/2/3.
-//  Copyright © 2017年 Ive. All rights reserved.
-//
 
-#ifndef IVESQLliteConfig_h
-#define IVESQLliteConfig_h
+#ifndef DDSQLliteConfig_h
+#define DDSQLliteConfig_h
 
 extern NSString *const SQLSortKey;
 extern NSString *const SQLSortStyle;
@@ -22,4 +15,4 @@ extern NSString *const SQLLimtStartValue;
 - (BOOL)primaryKeyAutoIncrement;
 @end
 
-#endif /* IVESQLliteConfig_h */
+#endif /* DDSQLliteConfig_h */

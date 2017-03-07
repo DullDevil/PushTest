@@ -1,6 +1,6 @@
 
 #import "SQLLiteDataBaseAPI.h"
-#import "IVESqlManager.h"
+#import "DDSqlManager.h"
 
 
 
@@ -36,17 +36,17 @@
 		if ([self.SQLLiteChild respondsToSelector:@selector(primaryKeyAutoIncrement)]) {
 			autoIncrement = self.SQLLiteChild.primaryKeyAutoIncrement;
 		}
-       return  [[IVESqlManager shareManager] creatTableWithName:self.SQLLiteChild.tableName KeyAttributes:self.SQLLiteChild.keyAttributes primaryKey:primaryKey autoIncrement:autoIncrement];
+       return  [[DDSqlManager shareManager] creatTableWithName:self.SQLLiteChild.tableName KeyAttributes:self.SQLLiteChild.keyAttributes primaryKey:primaryKey autoIncrement:autoIncrement];
     }
 	
-	return [[IVESqlManager shareManager] creatTableWithName:self.SQLLiteChild.tableName KeyAttributes:self.SQLLiteChild.keyAttributes primaryKey:primaryKey autoIncrement:YES];
+	return [[DDSqlManager shareManager] creatTableWithName:self.SQLLiteChild.tableName KeyAttributes:self.SQLLiteChild.keyAttributes primaryKey:primaryKey autoIncrement:YES];
 	
 }
 
 //插入数据
 - (NSDictionary *)insertObjectWithInfo:(NSDictionary *)info {
 	if ([self createtable]) {
-		NSInteger lastID = [[IVESqlManager shareManager] insertInfo:info tableName:self.SQLLiteChild.tableName];
+		NSInteger lastID = [[DDSqlManager shareManager] insertInfo:info tableName:self.SQLLiteChild.tableName];
 		if (lastID > 0) {
 			if ([self.SQLLiteChild respondsToSelector:@selector(primaryKey)]) {
 				NSString *primaryKey = self.SQLLiteChild.primaryKey;
@@ -73,7 +73,7 @@
 		
 		if ([strongSelf createtable]) {
 			
-			NSInteger lastID = [[IVESqlManager shareManager] batchInsertInfoArr:infoArr tableName:strongSelf.SQLLiteChild.tableName];
+			NSInteger lastID = [[DDSqlManager shareManager] batchInsertInfoArr:infoArr tableName:strongSelf.SQLLiteChild.tableName];
 			if (lastID > 0) {
 				if ([self.SQLLiteChild respondsToSelector:@selector(primaryKey)]) {
 					NSString *primaryKey = self.SQLLiteChild.primaryKey;
@@ -93,15 +93,15 @@
 //删除数据
 - (BOOL)deletObjectWithCondition:(NSDictionary *)condition {
 
-	return [[IVESqlManager shareManager] deleteObjectFromTable:self.SQLLiteChild.tableName condition:condition];
+	return [[DDSqlManager shareManager] deleteObjectFromTable:self.SQLLiteChild.tableName condition:condition];
 }
 - (BOOL)deletObjectWithConditionString:(NSString *)conditionString {
 
-	return [[IVESqlManager shareManager] deleteObjectFromTable:self.SQLLiteChild.tableName conditionString:conditionString];
+	return [[DDSqlManager shareManager] deleteObjectFromTable:self.SQLLiteChild.tableName conditionString:conditionString];
 }
 //更新数据
 - (BOOL)updateObjectWithInfo:(NSDictionary *)info condition:(NSDictionary *)condition  {
-	return [[IVESqlManager shareManager] updateObjectFromTable:self.SQLLiteChild.tableName info:info condition:condition];
+	return [[DDSqlManager shareManager] updateObjectFromTable:self.SQLLiteChild.tableName info:info condition:condition];
 }
 
 //查询数据
@@ -109,7 +109,7 @@
     __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
         __strong typeof (weakSelf) strongSelf = weakSelf;
-        NSArray *result = [[IVESqlManager shareManager] queryTable:strongSelf.SQLLiteChild.tableName conditionStr:conditionStr ouputClass:nil];
+        NSArray *result = [[DDSqlManager shareManager] queryTable:strongSelf.SQLLiteChild.tableName conditionStr:conditionStr ouputClass:nil];
         if (result.count > 0) {
             success(@{@"result":result});
         } else {
@@ -119,7 +119,7 @@
 }
 
 - (NSArray *)queryInfoWithCondition:(NSString *)conditionStr {
-	return [[IVESqlManager shareManager] queryTable:self.SQLLiteChild.tableName conditionStr:conditionStr ouputClass:nil];
+	return [[DDSqlManager shareManager] queryTable:self.SQLLiteChild.tableName conditionStr:conditionStr ouputClass:nil];
 }
 
 

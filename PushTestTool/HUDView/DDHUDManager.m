@@ -1,19 +1,19 @@
 
-#import "IVEHUDManager.h"
+#import "DDHUDManager.h"
 #import "MBProgressHUD.h"
 
-static IVEHUDManager * kHUDManager = nil;
+static DDHUDManager * kHUDManager = nil;
 
-@interface IVEHUDManager ()
+@interface DDHUDManager ()
 @property (nonatomic,strong) MBProgressHUD *messageHUD;
 @property (nonatomic,strong) MBProgressHUD *indeterminateHUD;
 @end
 
-@implementation IVEHUDManager
-+ (IVEHUDManager *)shareManager {
+@implementation DDHUDManager
++ (DDHUDManager *)shareManager {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        kHUDManager = [[IVEHUDManager alloc] init];
+        kHUDManager = [[DDHUDManager alloc] init];
         UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
         
         kHUDManager.messageHUD = [[MBProgressHUD alloc] initWithView:keyWindow];
@@ -44,7 +44,7 @@ static IVEHUDManager * kHUDManager = nil;
 
 @implementation UIViewController (HUD)
 - (void)showMessage:(NSString *)message {
-    MBProgressHUD *messageHUD = [IVEHUDManager shareManager].messageHUD;
+    MBProgressHUD *messageHUD = [DDHUDManager shareManager].messageHUD;
     messageHUD.label.text = message;
     [messageHUD showAnimated:YES];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(message.length * 0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -53,19 +53,19 @@ static IVEHUDManager * kHUDManager = nil;
 }
 
 - (void)showIndeterminateWithTapCancle:(void(^)())tapCancle {
-    MBProgressHUD *indeterminateHUD = [IVEHUDManager shareManager].indeterminateHUD;
+    MBProgressHUD *indeterminateHUD = [DDHUDManager shareManager].indeterminateHUD;
     [indeterminateHUD showAnimated:YES];
-    [IVEHUDManager shareManager].tapCancle = tapCancle;
+    [DDHUDManager shareManager].tapCancle = tapCancle;
 }
 
 - (void)showIndeterminate {
-    MBProgressHUD *indeterminateHUD = [IVEHUDManager shareManager].indeterminateHUD;
+    MBProgressHUD *indeterminateHUD = [DDHUDManager shareManager].indeterminateHUD;
     
     [indeterminateHUD showAnimated:YES];
 }
 
 - (void)hideIndeterminate {
-    MBProgressHUD *indeterminateHUD = [IVEHUDManager shareManager].indeterminateHUD;
+    MBProgressHUD *indeterminateHUD = [DDHUDManager shareManager].indeterminateHUD;
     [indeterminateHUD hideAnimated:YES];
 }
 

@@ -1,5 +1,5 @@
 
-#import "IVESQLGenerater.h"
+#import "DDSQLGenerater.h"
 #import <objc/runtime.h>
 
 NSString *const SQLSortKey = @"SortKey";
@@ -10,7 +10,7 @@ NSString *const SQLLimtStartValue = @"SQLLimtStartValue";
 
 
 
-@implementation IVESQLGenerater
+@implementation DDSQLGenerater
 #pragma mark - -创建表
 
 + (NSString *)creatTableWithName:(NSString *)tableName KeyAttributes:(NSDictionary *)KeyAttributes primaryKey:(NSString *)primaryKey {

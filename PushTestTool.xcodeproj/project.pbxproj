@@ -26,7 +26,7 @@
 		1562E0631E2DAEAA0021F8D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1562E0611E2DAEAA0021F8D4 /* Main.storyboard */; };
 		1562E0651E2DAEAA0021F8D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1562E0641E2DAEAA0021F8D4 /* Assets.xcassets */; };
 		1562E0681E2DAEAA0021F8D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1562E0661E2DAEAA0021F8D4 /* LaunchScreen.storyboard */; };
-		1562E0851E3071700021F8D4 /* IVEHUDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1562E0841E3071700021F8D4 /* IVEHUDManager.m */; };
+		1562E0851E3071700021F8D4 /* DDHUDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1562E0841E3071700021F8D4 /* DDHUDManager.m */; };
 		158887C71E45B97C008983A3 /* PushManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 158887B81E45B97C008983A3 /* PushManager.m */; };
 		158887CA1E45B97C008983A3 /* EditDeviceInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158887C01E45B97C008983A3 /* EditDeviceInfoViewController.m */; };
 		158887CB1E45B97C008983A3 /* ChooseTokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158887C21E45B97C008983A3 /* ChooseTokenViewController.m */; };
@@ -35,10 +35,10 @@
 		158887E01E45B9D1008983A3 /* PushEnvironmentAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 158887D31E45B9D1008983A3 /* PushEnvironmentAPI.m */; };
 		158887EA1E45BF5D008983A3 /* EditEnvironmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158887E91E45BF5D008983A3 /* EditEnvironmentViewController.m */; };
 		158887ED1E45C720008983A3 /* ChooseEnvironmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158887EC1E45C720008983A3 /* ChooseEnvironmentViewController.m */; };
-		15A6B03D1E4BF34300D9E02A /* IVESQLGenerater.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A6B0341E4BF34300D9E02A /* IVESQLGenerater.m */; };
-		15A6B03E1E4BF34300D9E02A /* IVESqlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A6B0371E4BF34300D9E02A /* IVESqlManager.m */; };
-		15A6B03F1E4BF34300D9E02A /* SQLLiteDataBaseAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A6B0391E4BF34300D9E02A /* SQLLiteDataBaseAPI.m */; };
-		15A6B0401E4BF34300D9E02A /* IVEClassTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A6B03C1E4BF34300D9E02A /* IVEClassTool.m */; };
+		15AE87FE1E6E5D6300E53792 /* DDClassTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AE87FD1E6E5D6300E53792 /* DDClassTool.m */; };
+		15AE88061E6E5D9E00E53792 /* DDSQLGenerater.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AE88001E6E5D9E00E53792 /* DDSQLGenerater.m */; };
+		15AE88071E6E5D9E00E53792 /* DDSqlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AE88031E6E5D9E00E53792 /* DDSqlManager.m */; };
+		15AE88081E6E5D9E00E53792 /* SQLLiteDataBaseAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AE88051E6E5D9E00E53792 /* SQLLiteDataBaseAPI.m */; };
 		6937C67B52C223EEAEB52514 /* libPods-PushTestTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9129FF1209C70883DA137EFD /* libPods-PushTestTool.a */; };
 /* End PBXBuildFile section */
 
@@ -51,8 +51,8 @@
 		1562E0641E2DAEAA0021F8D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1562E0671E2DAEAA0021F8D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1562E0691E2DAEAA0021F8D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1562E0831E3071700021F8D4 /* IVEHUDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVEHUDManager.h; sourceTree = "<group>"; };
-		1562E0841E3071700021F8D4 /* IVEHUDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVEHUDManager.m; sourceTree = "<group>"; };
+		1562E0831E3071700021F8D4 /* DDHUDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHUDManager.h; sourceTree = "<group>"; };
+		1562E0841E3071700021F8D4 /* DDHUDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHUDManager.m; sourceTree = "<group>"; };
 		158887B71E45B97C008983A3 /* PushManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushManager.h; sourceTree = "<group>"; };
 		158887B81E45B97C008983A3 /* PushManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushManager.m; sourceTree = "<group>"; };
 		158887BF1E45B97C008983A3 /* EditDeviceInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditDeviceInfoViewController.h; sourceTree = "<group>"; };
@@ -69,15 +69,15 @@
 		158887E91E45BF5D008983A3 /* EditEnvironmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditEnvironmentViewController.m; sourceTree = "<group>"; };
 		158887EB1E45C720008983A3 /* ChooseEnvironmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseEnvironmentViewController.h; sourceTree = "<group>"; };
 		158887EC1E45C720008983A3 /* ChooseEnvironmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseEnvironmentViewController.m; sourceTree = "<group>"; };
-		15A6B0331E4BF34300D9E02A /* IVESQLGenerater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVESQLGenerater.h; sourceTree = "<group>"; };
-		15A6B0341E4BF34300D9E02A /* IVESQLGenerater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVESQLGenerater.m; sourceTree = "<group>"; };
-		15A6B0351E4BF34300D9E02A /* IVESQLliteConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVESQLliteConfig.h; sourceTree = "<group>"; };
-		15A6B0361E4BF34300D9E02A /* IVESqlManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVESqlManager.h; sourceTree = "<group>"; };
-		15A6B0371E4BF34300D9E02A /* IVESqlManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVESqlManager.m; sourceTree = "<group>"; };
-		15A6B0381E4BF34300D9E02A /* SQLLiteDataBaseAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLLiteDataBaseAPI.h; sourceTree = "<group>"; };
-		15A6B0391E4BF34300D9E02A /* SQLLiteDataBaseAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLLiteDataBaseAPI.m; sourceTree = "<group>"; };
-		15A6B03B1E4BF34300D9E02A /* IVEClassTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVEClassTool.h; sourceTree = "<group>"; };
-		15A6B03C1E4BF34300D9E02A /* IVEClassTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVEClassTool.m; sourceTree = "<group>"; };
+		15AE87FC1E6E5D6300E53792 /* DDClassTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDClassTool.h; sourceTree = "<group>"; };
+		15AE87FD1E6E5D6300E53792 /* DDClassTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDClassTool.m; sourceTree = "<group>"; };
+		15AE87FF1E6E5D9E00E53792 /* DDSQLGenerater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDSQLGenerater.h; sourceTree = "<group>"; };
+		15AE88001E6E5D9E00E53792 /* DDSQLGenerater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDSQLGenerater.m; sourceTree = "<group>"; };
+		15AE88011E6E5D9E00E53792 /* DDSQLliteConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDSQLliteConfig.h; sourceTree = "<group>"; };
+		15AE88021E6E5D9E00E53792 /* DDSqlManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDSqlManager.h; sourceTree = "<group>"; };
+		15AE88031E6E5D9E00E53792 /* DDSqlManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDSqlManager.m; sourceTree = "<group>"; };
+		15AE88041E6E5D9E00E53792 /* SQLLiteDataBaseAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLLiteDataBaseAPI.h; sourceTree = "<group>"; };
+		15AE88051E6E5D9E00E53792 /* SQLLiteDataBaseAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLLiteDataBaseAPI.m; sourceTree = "<group>"; };
 		2F2FFD4628E396A41BE366F6 /* Pods-PushTestTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushTestTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-PushTestTool/Pods-PushTestTool.release.xcconfig"; sourceTree = "<group>"; };
 		81AE8A43411E4CB25D737E2F /* Pods-PushTestTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushTestTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PushTestTool/Pods-PushTestTool.debug.xcconfig"; sourceTree = "<group>"; };
 		9129FF1209C70883DA137EFD /* libPods-PushTestTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PushTestTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,8 +142,8 @@
 		1562E0821E3071700021F8D4 /* HUDView */ = {
 			isa = PBXGroup;
 			children = (
-				1562E0831E3071700021F8D4 /* IVEHUDManager.h */,
-				1562E0841E3071700021F8D4 /* IVEHUDManager.m */,
+				1562E0831E3071700021F8D4 /* DDHUDManager.h */,
+				1562E0841E3071700021F8D4 /* DDHUDManager.m */,
 			);
 			path = HUDView;
 			sourceTree = "<group>";
@@ -197,13 +197,13 @@
 		15A6B0321E4BF34300D9E02A /* SQLManager */ = {
 			isa = PBXGroup;
 			children = (
-				15A6B0331E4BF34300D9E02A /* IVESQLGenerater.h */,
-				15A6B0341E4BF34300D9E02A /* IVESQLGenerater.m */,
-				15A6B0351E4BF34300D9E02A /* IVESQLliteConfig.h */,
-				15A6B0361E4BF34300D9E02A /* IVESqlManager.h */,
-				15A6B0371E4BF34300D9E02A /* IVESqlManager.m */,
-				15A6B0381E4BF34300D9E02A /* SQLLiteDataBaseAPI.h */,
-				15A6B0391E4BF34300D9E02A /* SQLLiteDataBaseAPI.m */,
+				15AE87FF1E6E5D9E00E53792 /* DDSQLGenerater.h */,
+				15AE88001E6E5D9E00E53792 /* DDSQLGenerater.m */,
+				15AE88011E6E5D9E00E53792 /* DDSQLliteConfig.h */,
+				15AE88021E6E5D9E00E53792 /* DDSqlManager.h */,
+				15AE88031E6E5D9E00E53792 /* DDSqlManager.m */,
+				15AE88041E6E5D9E00E53792 /* SQLLiteDataBaseAPI.h */,
+				15AE88051E6E5D9E00E53792 /* SQLLiteDataBaseAPI.m */,
 				15A6B03A1E4BF34300D9E02A /* Tools */,
 			);
 			path = SQLManager;
@@ -212,8 +212,8 @@
 		15A6B03A1E4BF34300D9E02A /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				15A6B03B1E4BF34300D9E02A /* IVEClassTool.h */,
-				15A6B03C1E4BF34300D9E02A /* IVEClassTool.m */,
+				15AE87FC1E6E5D6300E53792 /* DDClassTool.h */,
+				15AE87FD1E6E5D6300E53792 /* DDClassTool.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -377,19 +377,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				158887CD1E45B97C008983A3 /* ViewController.m in Sources */,
-				1562E0851E3071700021F8D4 /* IVEHUDManager.m in Sources */,
+				1562E0851E3071700021F8D4 /* DDHUDManager.m in Sources */,
+				15AE88071E6E5D9E00E53792 /* DDSqlManager.m in Sources */,
 				158887C71E45B97C008983A3 /* PushManager.m in Sources */,
 				158887ED1E45C720008983A3 /* ChooseEnvironmentViewController.m in Sources */,
 				1562E05D1E2DAEAA0021F8D4 /* AppDelegate.m in Sources */,
+				15AE88061E6E5D9E00E53792 /* DDSQLGenerater.m in Sources */,
 				158887DF1E45B9D1008983A3 /* DeviceTokenAPI.m in Sources */,
-				15A6B0401E4BF34300D9E02A /* IVEClassTool.m in Sources */,
 				1562E05A1E2DAEAA0021F8D4 /* main.m in Sources */,
 				158887CB1E45B97C008983A3 /* ChooseTokenViewController.m in Sources */,
-				15A6B03F1E4BF34300D9E02A /* SQLLiteDataBaseAPI.m in Sources */,
 				158887CA1E45B97C008983A3 /* EditDeviceInfoViewController.m in Sources */,
-				15A6B03D1E4BF34300D9E02A /* IVESQLGenerater.m in Sources */,
+				15AE87FE1E6E5D6300E53792 /* DDClassTool.m in Sources */,
+				15AE88081E6E5D9E00E53792 /* SQLLiteDataBaseAPI.m in Sources */,
 				158887E01E45B9D1008983A3 /* PushEnvironmentAPI.m in Sources */,
-				15A6B03E1E4BF34300D9E02A /* IVESqlManager.m in Sources */,
 				158887EA1E45BF5D008983A3 /* EditEnvironmentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,7 +516,7 @@
 				INFOPLIST_FILE = PushTestTool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jc.qualitydev.inhouse;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pustTest.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "133db934-ec1c-4045-a549-d56418064fed";
 				PROVISIONING_PROFILE_SPECIFIER = "qualitydev-inhouse-dev-profile";
@@ -534,7 +534,7 @@
 				INFOPLIST_FILE = PushTestTool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jc.qualitydev.inhouse;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pustTest.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "133db934-ec1c-4045-a549-d56418064fed";
 				PROVISIONING_PROFILE_SPECIFIER = "qualitydev-inhouse-dev-profile";

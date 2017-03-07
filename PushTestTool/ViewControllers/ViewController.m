@@ -1,10 +1,6 @@
 //
 //  ViewController.m
 //  PushTestTool
-//
-//  Created by 张桂杨 on 2017/1/17.
-//  Copyright © 2017年 Ive. All rights reserved.
-//
 
 #import "ViewController.h"
 
@@ -12,7 +8,7 @@
 #import "ChooseTokenViewController.h"
 #import "ChooseEnvironmentViewController.h"
 
-#import "IVEHUDManager.h"
+#import "DDHUDManager.h"
 
 #import "PushEnvironmentAPI.h"
 #import "DeviceTokenAPI.h"

@@ -2,7 +2,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IVEHUDManager : NSObject
+@interface DDHUDManager : NSObject
 @property (nonatomic,copy) void(^tapCancle)();
 @end
 

@@ -1,27 +1,27 @@
 
 
-#import "IVESqlManager.h"
+#import "DDSqlManager.h"
 #import <objc/runtime.h>
 #import "FMDatabase.h"
 #import "FMDatabaseQueue.h"
-#import "IVESQLGenerater.h"
-#import "IVEClassTool.h"
+#import "DDSQLGenerater.h"
+#import "DDClassTool.h"
 
 
 static NSString *const k_DB_NAME = @"Push.db";
 
-static IVESqlManager *sqlManager = nil;
+static DDSqlManager *sqlManager = nil;
 
 
-@implementation IVESqlManager {
+@implementation DDSqlManager {
     NSMutableArray *_propertiesArray;
     FMDatabase * _db;
     NSString *_dbPath;
 }
-+ (IVESqlManager *)shareManager {
++ (DDSqlManager *)shareManager {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        sqlManager = [[IVESqlManager alloc] init];
+        sqlManager = [[DDSqlManager alloc] init];
 		
 		NSFileManager *fileManager = [NSFileManager defaultManager];
 		NSString *pathDocuments = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
@@ -47,7 +47,7 @@ static IVESqlManager *sqlManager = nil;
 - (BOOL)creatTableWithName:(NSString *)tableName KeyAttributes:(NSDictionary *)KeyAttributes primaryKey:(NSString *)primaryKey autoIncrement:(BOOL)autoIncrement {
 
     if ([_db open]) {
-        NSString *creatTableSql = [IVESQLGenerater creatTableWithName:tableName KeyAttributes:KeyAttributes primaryKey:primaryKey autoIncrement:autoIncrement];
+        NSString *creatTableSql = [DDSQLGenerater creatTableWithName:tableName KeyAttributes:KeyAttributes primaryKey:primaryKey autoIncrement:autoIncrement];
         if (!creatTableSql) {
             
             return NO;
@@ -64,7 +64,7 @@ static IVESqlManager *sqlManager = nil;
 - (BOOL)deleteTable:(Class)tableClass {
     if ([_db open]) {
         NSString *tableName = NSStringFromClass(tableClass);
-        NSString *changeTableNameSql = [IVESQLGenerater deleteTable:tableName];
+        NSString *changeTableNameSql = [DDSQLGenerater deleteTable:tableName];
         return [_db executeUpdate:changeTableNameSql];
     }
     return NO;
@@ -73,7 +73,7 @@ static IVESqlManager *sqlManager = nil;
 #pragma mark - 增
 - (BOOL)insertObject:(NSObject *)object {
     if ([_db open]) {
-        NSString *insertSql = [IVESQLGenerater insertObject:object];
+        NSString *insertSql = [DDSQLGenerater insertObject:object];
 		
         return [_db executeUpdate:insertSql];
     }
@@ -82,7 +82,7 @@ static IVESqlManager *sqlManager = nil;
 
 - (NSInteger)insertInfo:(NSDictionary *)info tableName:(NSString *)tableName  {
     if ([_db open]) {
-        NSString *insertSql = [IVESQLGenerater insertInfo:info tableName:tableName];
+        NSString *insertSql = [DDSQLGenerater insertInfo:info tableName:tableName];
         BOOL executeResult = [_db executeUpdate:insertSql];
         if (executeResult) {
             return (NSInteger)[_db lastInsertRowId];
@@ -100,7 +100,7 @@ static IVESqlManager *sqlManager = nil;
 		@try {
 			for (NSInteger index = 0; index < infoArr.count; index ++) {
 				NSDictionary *info = infoArr[index];
-				NSString *insertSql = [IVESQLGenerater insertInfo:info tableName:tableName];
+				NSString *insertSql = [DDSQLGenerater insertInfo:info tableName:tableName];
 				[_db executeUpdate:insertSql];
 			}
 		} @catch (NSException *exception) {
@@ -121,7 +121,7 @@ static IVESqlManager *sqlManager = nil;
 #pragma mark - 删
 - (BOOL)deleteObjectFromTable:(NSString *)tableName condition:(NSDictionary *)condition {
     if ([_db open]) {
-        NSString *deleteSql = [IVESQLGenerater deleteFromTableWithTableName:tableName condition:condition];
+        NSString *deleteSql = [DDSQLGenerater deleteFromTableWithTableName:tableName condition:condition];
         return [_db executeUpdate:deleteSql];
     }
     return NO;
@@ -129,7 +129,7 @@ static IVESqlManager *sqlManager = nil;
 
 - (BOOL)deleteObjectFromTable:(NSString *)tableName conditionString:(NSString *)conditionString {
  if ([_db open]) {
-	 NSString *deleteSql = [IVESQLGenerater deleteSqlStringWithTableName:tableName conditionString:conditionString];
+	 NSString *deleteSql = [DDSQLGenerater deleteSqlStringWithTableName:tableName conditionString:conditionString];
 	 return [_db executeUpdate:deleteSql];
  }
 	return NO;
@@ -138,7 +138,7 @@ static IVESqlManager *sqlManager = nil;
 #pragma mark - 改
 - (BOOL)updateObjectFromTable:(NSString *)tableName info:(NSDictionary *)info condition:(NSDictionary *)condition {
     if ([_db open]) {
-        NSString *updateSql = [IVESQLGenerater updateSqlStringWithTableName:tableName updateDict:info condition:condition];
+        NSString *updateSql = [DDSQLGenerater updateSqlStringWithTableName:tableName updateDict:info condition:condition];
         return [_db executeUpdate:updateSql];
     }
     return NO;
@@ -150,7 +150,7 @@ static IVESqlManager *sqlManager = nil;
     NSMutableArray *array = [NSMutableArray array];
     
     if ([_db open]) {
-        NSString *sql = [IVESQLGenerater querySqlStringWithTableName:tableName conditionStr:conditionStr sortDict:nil];
+        NSString *sql = [DDSQLGenerater querySqlStringWithTableName:tableName conditionStr:conditionStr sortDict:nil];
         
         FMResultSet *set = [_db executeQuery:sql];
         if (className) {
@@ -172,7 +172,7 @@ static IVESqlManager *sqlManager = nil;
 	NSMutableArray *array = [NSMutableArray array];
 	
 	if ([_db open]) {
-		NSString *sql = [IVESQLGenerater querySqlStringWithTableName:tableName limtInfo:limtInfo sortDict:sortDict];
+		NSString *sql = [DDSQLGenerater querySqlStringWithTableName:tableName limtInfo:limtInfo sortDict:sortDict];
 		
 		FMResultSet *set = [_db executeQuery:sql];
 		if (className) {
@@ -192,7 +192,7 @@ static IVESqlManager *sqlManager = nil;
 
 - (NSArray *)transfromResultToObject:(FMResultSet *)set className:(Class)className{
 	NSMutableArray *array = [NSMutableArray array];
-	NSDictionary *dict = [IVEClassTool propertiesDict:className];
+	NSDictionary *dict = [DDClassTool propertiesDict:className];
 	while ([set next]) {
 		id object = [[className alloc] init];
 		for (NSString *propertyName in dict.allKeys) {

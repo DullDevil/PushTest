@@ -1,15 +1,9 @@
-//
-//  IVEClassTool.m
-//  MVC
-//
-//  Created by 张桂杨 on 16/8/29.
-//  Copyright © 2016年 Ive. All rights reserved.
-//
 
-#import "IVEClassTool.h"
+
+#import "DDClassTool.h"
 #import <objc/runtime.h>
 
-@implementation IVEClassTool
+@implementation DDClassTool
 
 
 + (NSDictionary *)propertiesDict:(Class)class {

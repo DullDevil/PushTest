@@ -1,7 +1,7 @@
 
 #import "EditEnvironmentViewController.h"
 #import "PushEnvironmentAPI.h"
-#import "IVEHUDManager.h"
+#import "DDHUDManager.h"
 
 @interface EditEnvironmentViewController () {
 	PushEnvironmentAPI *_pushEnvironmentApi;
