@@ -36,12 +36,19 @@
 		[self.pushDelegate sendSucceed];
 	}
 }
-
+- (void)socketDidSecure:(GCDAsyncSocket *)sock {
+	NSLog(@"xxxx");
+}
 #pragma mark - events
-- (void)connectAPNSWithPkcs12Data:(NSData *)pkcs12Data password:(NSString *)password {
+- (void)connectAPNSWithPkcs12Data:(NSData *)pkcs12Data password:(NSString *)password type:(PushEnvironmentType)type{
 	_pkcs12Data = pkcs12Data;
 	_password = password;
-	[_socket connectToHost:@"gateway.sandbox.push.apple.com" onPort:2195 error:nil];
+	if (type == PushEnvironmentTypeProduction) {
+		[_socket connectToHost:@"gateway.push.apple.com" onPort:2195 error:nil];
+	} else {
+		[_socket connectToHost:@"gateway.sandbox.push.apple.com" onPort:2195 error:nil];
+	}
+	
 }
 
 - (void)disconnectAPNS {

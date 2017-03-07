@@ -9,6 +9,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *environmentNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *certificatePasswordTextField;
 @property (weak, nonatomic) IBOutlet UITextView *certificateContentTextField;
+@property (weak, nonatomic) IBOutlet UIButton *changeTypeButton;
 
 @end
 
@@ -22,8 +23,18 @@
 		_environmentNameTextField.text = self.selectedItem[PushEnvironmentAPIName];
 		_certificatePasswordTextField.text = self.selectedItem[PushEnvironmentAPICerPassword];
 		_certificateContentTextField.text = self.selectedItem[PushEnvironmentAPICerData];
+		NSString *type = self.selectedItem[PushEnvironmentAPIType];
+		[_changeTypeButton setTitle:[type isEqualToString:@"1"]?@"生产":@"测试" forState:UIControlStateNormal];
 	}
 	
+	
+}
+- (IBAction)changeType:(UIButton *)button {
+	if ([button.titleLabel.text isEqualToString:@"测试"]) {
+		[button setTitle:@"生产" forState:UIControlStateNormal];
+	} else if ([button.titleLabel.text isEqualToString:@"生产"]) {
+		[button setTitle:@"测试" forState:UIControlStateNormal];
+	}
 	
 }
 - (IBAction)editHasFinished:(id)sender {
@@ -39,7 +50,8 @@
 		return;
 	}
 	
-	NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObjectsAndKeys:certificateContent,PushEnvironmentAPICerData,environmentName,PushEnvironmentAPIName,_certificatePasswordTextField.text,PushEnvironmentAPICerPassword, nil];
+	NSString *type = [self.changeTypeButton.titleLabel.text isEqualToString:@"测试"] ? @"0":@"1";
+	NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObjectsAndKeys:certificateContent,PushEnvironmentAPICerData,environmentName,PushEnvironmentAPIName,_certificatePasswordTextField.text,PushEnvironmentAPICerPassword,type,PushEnvironmentAPIType, nil];
 	if (self.selectedItem) {
 		[dict setValue:self.selectedItem[PushEnvironmentAPIID] forKey:PushEnvironmentAPIID];
 	}

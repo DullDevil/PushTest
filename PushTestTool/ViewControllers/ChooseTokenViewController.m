@@ -123,7 +123,7 @@
 		destinationViewController.editHasFinished = ^() {
 			[self queryDeviceInfo];
 			if (isEditSelected) {
-				[[NSNotificationCenter defaultCenter] postNotificationName:@"change" object:nil];
+				[[NSNotificationCenter defaultCenter] postNotificationName:@"TokenChanged" object:nil];
 			}
 		};
 		

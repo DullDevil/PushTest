@@ -30,19 +30,15 @@
 		158887C71E45B97C008983A3 /* PushManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 158887B81E45B97C008983A3 /* PushManager.m */; };
 		158887CA1E45B97C008983A3 /* EditDeviceInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158887C01E45B97C008983A3 /* EditDeviceInfoViewController.m */; };
 		158887CB1E45B97C008983A3 /* ChooseTokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158887C21E45B97C008983A3 /* ChooseTokenViewController.m */; };
-		158887CC1E45B97C008983A3 /* EditInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158887C41E45B97C008983A3 /* EditInfoViewController.m */; };
 		158887CD1E45B97C008983A3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158887C61E45B97C008983A3 /* ViewController.m */; };
 		158887DF1E45B9D1008983A3 /* DeviceTokenAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 158887D11E45B9D1008983A3 /* DeviceTokenAPI.m */; };
 		158887E01E45B9D1008983A3 /* PushEnvironmentAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 158887D31E45B9D1008983A3 /* PushEnvironmentAPI.m */; };
 		158887EA1E45BF5D008983A3 /* EditEnvironmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158887E91E45BF5D008983A3 /* EditEnvironmentViewController.m */; };
 		158887ED1E45C720008983A3 /* ChooseEnvironmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158887EC1E45C720008983A3 /* ChooseEnvironmentViewController.m */; };
-		15A6AFC61E480C1D00D9E02A /* ChoosePushCustomInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A6AFC51E480C1D00D9E02A /* ChoosePushCustomInfoViewController.m */; };
 		15A6B03D1E4BF34300D9E02A /* IVESQLGenerater.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A6B0341E4BF34300D9E02A /* IVESQLGenerater.m */; };
 		15A6B03E1E4BF34300D9E02A /* IVESqlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A6B0371E4BF34300D9E02A /* IVESqlManager.m */; };
 		15A6B03F1E4BF34300D9E02A /* SQLLiteDataBaseAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A6B0391E4BF34300D9E02A /* SQLLiteDataBaseAPI.m */; };
 		15A6B0401E4BF34300D9E02A /* IVEClassTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A6B03C1E4BF34300D9E02A /* IVEClassTool.m */; };
-		2295DB231E46D21800F24432 /* PushCustonInfoAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2295DB221E46D21800F24432 /* PushCustonInfoAPI.m */; };
-		2295DB261E46D3FF00F24432 /* EditPushCustomInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2295DB251E46D3FF00F24432 /* EditPushCustomInfoViewController.m */; };
 		6937C67B52C223EEAEB52514 /* libPods-PushTestTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9129FF1209C70883DA137EFD /* libPods-PushTestTool.a */; };
 /* End PBXBuildFile section */
 
@@ -63,8 +59,6 @@
 		158887C01E45B97C008983A3 /* EditDeviceInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditDeviceInfoViewController.m; sourceTree = "<group>"; };
 		158887C11E45B97C008983A3 /* ChooseTokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseTokenViewController.h; sourceTree = "<group>"; };
 		158887C21E45B97C008983A3 /* ChooseTokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseTokenViewController.m; sourceTree = "<group>"; };
-		158887C31E45B97C008983A3 /* EditInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditInfoViewController.h; sourceTree = "<group>"; };
-		158887C41E45B97C008983A3 /* EditInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditInfoViewController.m; sourceTree = "<group>"; };
 		158887C51E45B97C008983A3 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		158887C61E45B97C008983A3 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		158887D01E45B9D1008983A3 /* DeviceTokenAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceTokenAPI.h; sourceTree = "<group>"; };
@@ -75,8 +69,6 @@
 		158887E91E45BF5D008983A3 /* EditEnvironmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditEnvironmentViewController.m; sourceTree = "<group>"; };
 		158887EB1E45C720008983A3 /* ChooseEnvironmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseEnvironmentViewController.h; sourceTree = "<group>"; };
 		158887EC1E45C720008983A3 /* ChooseEnvironmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseEnvironmentViewController.m; sourceTree = "<group>"; };
-		15A6AFC41E480C1D00D9E02A /* ChoosePushCustomInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoosePushCustomInfoViewController.h; sourceTree = "<group>"; };
-		15A6AFC51E480C1D00D9E02A /* ChoosePushCustomInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoosePushCustomInfoViewController.m; sourceTree = "<group>"; };
 		15A6B0331E4BF34300D9E02A /* IVESQLGenerater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVESQLGenerater.h; sourceTree = "<group>"; };
 		15A6B0341E4BF34300D9E02A /* IVESQLGenerater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVESQLGenerater.m; sourceTree = "<group>"; };
 		15A6B0351E4BF34300D9E02A /* IVESQLliteConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVESQLliteConfig.h; sourceTree = "<group>"; };
@@ -86,10 +78,6 @@
 		15A6B0391E4BF34300D9E02A /* SQLLiteDataBaseAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLLiteDataBaseAPI.m; sourceTree = "<group>"; };
 		15A6B03B1E4BF34300D9E02A /* IVEClassTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVEClassTool.h; sourceTree = "<group>"; };
 		15A6B03C1E4BF34300D9E02A /* IVEClassTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVEClassTool.m; sourceTree = "<group>"; };
-		2295DB211E46D21800F24432 /* PushCustonInfoAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushCustonInfoAPI.h; sourceTree = "<group>"; };
-		2295DB221E46D21800F24432 /* PushCustonInfoAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushCustonInfoAPI.m; sourceTree = "<group>"; };
-		2295DB241E46D3FF00F24432 /* EditPushCustomInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditPushCustomInfoViewController.h; sourceTree = "<group>"; };
-		2295DB251E46D3FF00F24432 /* EditPushCustomInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditPushCustomInfoViewController.m; sourceTree = "<group>"; };
 		2F2FFD4628E396A41BE366F6 /* Pods-PushTestTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushTestTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-PushTestTool/Pods-PushTestTool.release.xcconfig"; sourceTree = "<group>"; };
 		81AE8A43411E4CB25D737E2F /* Pods-PushTestTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushTestTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PushTestTool/Pods-PushTestTool.debug.xcconfig"; sourceTree = "<group>"; };
 		9129FF1209C70883DA137EFD /* libPods-PushTestTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PushTestTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,16 +164,10 @@
 				158887C01E45B97C008983A3 /* EditDeviceInfoViewController.m */,
 				158887E81E45BF5D008983A3 /* EditEnvironmentViewController.h */,
 				158887E91E45BF5D008983A3 /* EditEnvironmentViewController.m */,
-				2295DB241E46D3FF00F24432 /* EditPushCustomInfoViewController.h */,
-				2295DB251E46D3FF00F24432 /* EditPushCustomInfoViewController.m */,
 				158887C11E45B97C008983A3 /* ChooseTokenViewController.h */,
 				158887C21E45B97C008983A3 /* ChooseTokenViewController.m */,
 				158887EB1E45C720008983A3 /* ChooseEnvironmentViewController.h */,
 				158887EC1E45C720008983A3 /* ChooseEnvironmentViewController.m */,
-				15A6AFC41E480C1D00D9E02A /* ChoosePushCustomInfoViewController.h */,
-				15A6AFC51E480C1D00D9E02A /* ChoosePushCustomInfoViewController.m */,
-				158887C31E45B97C008983A3 /* EditInfoViewController.h */,
-				158887C41E45B97C008983A3 /* EditInfoViewController.m */,
 				158887C51E45B97C008983A3 /* ViewController.h */,
 				158887C61E45B97C008983A3 /* ViewController.m */,
 			);
@@ -208,8 +190,6 @@
 				158887D11E45B9D1008983A3 /* DeviceTokenAPI.m */,
 				158887D21E45B9D1008983A3 /* PushEnvironmentAPI.h */,
 				158887D31E45B9D1008983A3 /* PushEnvironmentAPI.m */,
-				2295DB211E46D21800F24432 /* PushCustonInfoAPI.h */,
-				2295DB221E46D21800F24432 /* PushCustonInfoAPI.m */,
 			);
 			path = SQLAPIs;
 			sourceTree = "<group>";
@@ -397,18 +377,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				158887CD1E45B97C008983A3 /* ViewController.m in Sources */,
-				2295DB261E46D3FF00F24432 /* EditPushCustomInfoViewController.m in Sources */,
 				1562E0851E3071700021F8D4 /* IVEHUDManager.m in Sources */,
 				158887C71E45B97C008983A3 /* PushManager.m in Sources */,
 				158887ED1E45C720008983A3 /* ChooseEnvironmentViewController.m in Sources */,
 				1562E05D1E2DAEAA0021F8D4 /* AppDelegate.m in Sources */,
 				158887DF1E45B9D1008983A3 /* DeviceTokenAPI.m in Sources */,
-				15A6AFC61E480C1D00D9E02A /* ChoosePushCustomInfoViewController.m in Sources */,
 				15A6B0401E4BF34300D9E02A /* IVEClassTool.m in Sources */,
-				158887CC1E45B97C008983A3 /* EditInfoViewController.m in Sources */,
 				1562E05A1E2DAEAA0021F8D4 /* main.m in Sources */,
 				158887CB1E45B97C008983A3 /* ChooseTokenViewController.m in Sources */,
-				2295DB231E46D21800F24432 /* PushCustonInfoAPI.m in Sources */,
 				15A6B03F1E4BF34300D9E02A /* SQLLiteDataBaseAPI.m in Sources */,
 				158887CA1E45B97C008983A3 /* EditDeviceInfoViewController.m in Sources */,
 				15A6B03D1E4BF34300D9E02A /* IVESQLGenerater.m in Sources */,
@@ -540,7 +516,7 @@
 				INFOPLIST_FILE = PushTestTool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pustTest.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jc.qualitydev.inhouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "133db934-ec1c-4045-a549-d56418064fed";
 				PROVISIONING_PROFILE_SPECIFIER = "qualitydev-inhouse-dev-profile";
@@ -558,7 +534,7 @@
 				INFOPLIST_FILE = PushTestTool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pustTest.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jc.qualitydev.inhouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "133db934-ec1c-4045-a549-d56418064fed";
 				PROVISIONING_PROFILE_SPECIFIER = "qualitydev-inhouse-dev-profile";

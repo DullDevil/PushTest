@@ -119,7 +119,7 @@
 		destinationViewController.eidtHasFinished = ^() {
 			[self queryEnvironmentInfo];
 			if (isEditSelected) {
-				[[NSNotificationCenter defaultCenter] postNotificationName:@"change" object:nil];
+				[[NSNotificationCenter defaultCenter] postNotificationName:@"EnvironmentChanged" object:nil];
 			}
 		};
 		

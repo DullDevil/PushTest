@@ -2,6 +2,7 @@
 #import "PushEnvironmentAPI.h"
 
 NSString * const  PushEnvironmentAPIID = @"id";
+NSString * const  PushEnvironmentAPIType = @"type";
 NSString * const  PushEnvironmentAPIName = @"environmentName";
 NSString * const  PushEnvironmentAPICerData = @"cerDataString";
 NSString * const  PushEnvironmentAPICerPassword = @"cerPassword";
@@ -17,11 +18,12 @@ static NSString * const PushEnvironmentSelectedID = @"PushEnvironmentSelectedID"
 	return @{PushEnvironmentAPIID:@"INTEGER",
 			 PushEnvironmentAPIName:@"TEXT",
 			 PushEnvironmentAPICerData:@"TEXT",
-			 PushEnvironmentAPICerPassword:@"TEXT"};
+			 PushEnvironmentAPICerPassword:@"TEXT",
+			 PushEnvironmentAPIType:@"TEXT"};
 }
 
 - (NSString *)primaryKey {
-	return @"id";
+	return PushEnvironmentAPIID;
 }
 - (BOOL)primaryKeyAutoIncrement {
 	return YES;
