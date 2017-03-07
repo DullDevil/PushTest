@@ -187,7 +187,7 @@ static NSString * const kPushContentKey = @"kPushContentKey";
 }
 - (void)APNSDidDisconnected {
  dispatch_sync(dispatch_get_main_queue(), ^{
-	 [self showMessage:@"发送失败"];
+	 [self showMessage:@"连接已断开"];
 	 [self hideIndeterminate];
  });
 }
